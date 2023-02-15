@@ -15,3 +15,7 @@ export {default as CLOSEACCOUNTMODAL} from "./modals/CloseAccountModal";
 export {default as LOGOUTMODAL} from "./modals/LogoutModal";
 
 export {default as NEWPAYMENTSCREEN} from "./NewPaymentScreen";
+
+export {default as TRANSCTIONHISSCREEN} from "./TransctionHisScreen";
+
+export {default as CHECkBALANCESCREEN} from "./CheckBalanceScreen";

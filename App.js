@@ -3,10 +3,12 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { NativeBaseProvider } from 'native-base'
 import React from 'react'
 import {
+  CHECkBALANCESCREEN,
   CLOSEACCOUNTMODAL,
   HELPFEEDBACKSCREEN,
-  HOMESCREEN, LOGOUTMODAL, NEWPAYMENTSCREEN, NOTIFYEMAILSCREEN, PRIVARCYSECURITYSCREEN, PROFILEINFOSCREEN, SETTINGSSCREEN,
-  SPLASHSCREEN, UPROFILESCREEN
+  HOMESCREEN, LOGOUTMODAL, NEWPAYMENTSCREEN, NOTIFYEMAILSCREEN,
+  PRIVARCYSECURITYSCREEN, PROFILEINFOSCREEN, SETTINGSSCREEN,
+  SPLASHSCREEN, TRANSCTIONHISSCREEN, UPROFILESCREEN
 } from './src/screens/screens'
 import { nvaStrings } from './src/utils/navStrings'
 
@@ -40,6 +42,8 @@ const App = () => {
           </Stack.Group>
 
           <Stack.Screen component={NEWPAYMENTSCREEN} name={nvaStrings.NewpaymentScreen} />
+          <Stack.Screen component={TRANSCTIONHISSCREEN} name={nvaStrings.TranscationHisScreen} />
+          <Stack.Screen component={CHECkBALANCESCREEN} name={nvaStrings.CheckBalanceScreen} />
         </Stack.Navigator>
       </NavigationContainer>
     </NativeBaseProvider>

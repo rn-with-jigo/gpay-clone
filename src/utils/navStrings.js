@@ -14,4 +14,7 @@ export const nvaStrings = {
     LogoutModal: "logoutmodal",
 
     NewpaymentScreen: "newpaymentscreen",
+
+    TranscationHisScreen: "transcationhisscreen",
+    CheckBalanceScreen: "checkbalancescreen",
 }

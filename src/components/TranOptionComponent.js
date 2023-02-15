@@ -1,17 +1,26 @@
 import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 import Appassets from '../assets/Appassets'
+import { useNavigation } from '@react-navigation/native'
+import { nvaStrings } from '../utils/navStrings'
 
 const TranOptionComponent = () => {
+
+    const navigation = useNavigation()
+
     return (
         <View style={{ marginHorizontal: 8, }}>
             <TouchableOpacity style={{
                 flexDirection: "row",
                 alignItems: "center",
-                marginVertical:8,
-                paddingVertical:8,
+                marginVertical: 8,
+                paddingVertical: 8,
                 // backgroundColor:"pink",
-            }}>
+            }}
+                onPress={() => {
+                    navigation.navigate(nvaStrings.TranscationHisScreen)
+                }}
+            >
                 <Image source={Appassets.IShowHis} style={{
 
                 }} />
@@ -30,10 +39,14 @@ const TranOptionComponent = () => {
             <TouchableOpacity style={{
                 flexDirection: "row",
                 alignItems: "center",
-                marginVertical:8,
-                paddingVertical:8,
+                marginVertical: 8,
+                paddingVertical: 8,
                 // backgroundColor:"pink",
-            }}>
+            }}
+            onPress={() => {
+                navigation.navigate(nvaStrings.CheckBalanceScreen)
+            }}
+            >
                 <Image source={Appassets.ICheckBlance} style={{
 
                 }} />

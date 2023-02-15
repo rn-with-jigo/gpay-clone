@@ -91,4 +91,24 @@ export default AppAssets = {
     NPUIElly: require("./new-payment/contact-user/elly.png"),
     NPUIHank: require("./new-payment/contact-user/hank.png"),
     NPUIKaira: require("./new-payment/contact-user/kaira.png"),
+
+    // bussiness tab resource
+
+    NPBBDailyEssentials :require("./new-payment/biunness_tab/Daily_Essentials.png"),
+    NPBBLocalService :require("./new-payment/biunness_tab/local_services.png"),
+    NPBBLocalService :require("./new-payment/biunness_tab/local_services.png"),
+    NPBBShoppingEyeware :require("./new-payment/biunness_tab/eyewear.png"),
+    NPBBFinance :require("./new-payment/biunness_tab/finance.png"),
+    NPBBTreadingGiftCard :require("./new-payment/biunness_tab/gift_card.png"),
+    NPBIGold :require("./new-payment/biunness_tab/gold.png"),
+    NPBBMcD :require("./new-payment/biunness_tab/mcd.png"),
+    NPBBTreadingInvestNews :require("./new-payment/biunness_tab/inverst_news.png"),
+    NPBBFoodMcPuff :require("./new-payment/biunness_tab/mc_puff.png"),
+    NPBBTreadingBus :require("./new-payment/biunness_tab/red_bus.png"),
+    NPBBShoppingGifts :require("./new-payment/biunness_tab/shopping.png"),
+    NPBITrain :require("./new-payment/biunness_tab/train.png"),
+
+    // bank logos
+    CBBISbi: require("./check_balance/sbi.png"),
+    CBBIAxis: require("./check_balance/axis.png"),
 }

@@ -3,7 +3,7 @@ import React from 'react'
 import Appassets from '../assets/Appassets';
 import { useNavigation } from '@react-navigation/native';
 
-const TopNavBarComponent = ({ name, newComponent = null }) => {
+const TopNavBarComponent = ({ name, newComponent = null, isVisable = true }) => {
 
     const navigation = useNavigation();
     return (
@@ -21,6 +21,7 @@ const TopNavBarComponent = ({ name, newComponent = null }) => {
             {newComponent ?
                 newComponent
                 :
+                isVisable?
                 <Text style={{
                     flex: 1,
                     fontWeight: "600",
@@ -28,6 +29,7 @@ const TopNavBarComponent = ({ name, newComponent = null }) => {
                     color: "#000",
                     marginLeft: 16,
                 }}>{name || "undefined"}</Text>
+                : <View style={{flex:1,}} />
             }
             <TouchableOpacity>
                 <Image source={Appassets.PIMenu} />
