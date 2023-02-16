@@ -17,4 +17,6 @@ export const nvaStrings = {
 
     TranscationHisScreen: "transcationhisscreen",
     CheckBalanceScreen: "checkbalancescreen",
+
+    RewardsScreen: "rewardsscreen",
 }

@@ -19,3 +19,5 @@ export {default as NEWPAYMENTSCREEN} from "./NewPaymentScreen";
 export {default as TRANSCTIONHISSCREEN} from "./TransctionHisScreen";
 
 export {default as CHECkBALANCESCREEN} from "./CheckBalanceScreen";
+
+export {default as REWARDSSCREEN} from "./Rewards/RewardsScreen";

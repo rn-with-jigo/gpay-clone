@@ -12,7 +12,9 @@ const PeopleShowComponent = ({ type = null, ele = null }) => {
             alignItems: "center",
             width: "25%",
             // backgroundColor:"pink",
-        }}>
+        }}
+            onPress={ele?.onPress ? ele?.onPress : null}
+        >
             {type == "none" && type != null ?
                 <>
                     <View style={{

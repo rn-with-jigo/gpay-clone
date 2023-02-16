@@ -7,7 +7,7 @@ import {
   CLOSEACCOUNTMODAL,
   HELPFEEDBACKSCREEN,
   HOMESCREEN, LOGOUTMODAL, NEWPAYMENTSCREEN, NOTIFYEMAILSCREEN,
-  PRIVARCYSECURITYSCREEN, PROFILEINFOSCREEN, SETTINGSSCREEN,
+  PRIVARCYSECURITYSCREEN, PROFILEINFOSCREEN, REWARDSSCREEN, SETTINGSSCREEN,
   SPLASHSCREEN, TRANSCTIONHISSCREEN, UPROFILESCREEN
 } from './src/screens/screens'
 import { nvaStrings } from './src/utils/navStrings'
@@ -44,6 +44,10 @@ const App = () => {
           <Stack.Screen component={NEWPAYMENTSCREEN} name={nvaStrings.NewpaymentScreen} />
           <Stack.Screen component={TRANSCTIONHISSCREEN} name={nvaStrings.TranscationHisScreen} />
           <Stack.Screen component={CHECkBALANCESCREEN} name={nvaStrings.CheckBalanceScreen} />
+
+          <Stack.Group>
+            <Stack.Screen component={REWARDSSCREEN} name={nvaStrings.RewardsScreen} />
+          </Stack.Group>
         </Stack.Navigator>
       </NavigationContainer>
     </NativeBaseProvider>

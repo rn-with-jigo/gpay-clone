@@ -2,14 +2,21 @@ import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import PeopleShowComponent from './PeopleShowComponent'
 import Appassets from '../assets/Appassets'
+import { useNavigation } from '@react-navigation/native'
+import { nvaStrings } from '../utils/navStrings'
 
 const SWModuleComponent = () => {
+
+    const navigation = useNavigation()
 
     const data = [
         {
             id: "#001",
             name: "Rewards",
             img: Appassets.IRewards,
+            onPress: () => {
+                navigation.navigate(nvaStrings.RewardsScreen)
+            }
         },
         {
             id: "#002",
